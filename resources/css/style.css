@@ -1,0 +1,74 @@
+html {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+}
+
+/* Header Section */
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  opacity: 0.5;
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  /*padding: 1.875rem;*/
+  height: 4rem;
+  display: space-between;
+}
+
+header img{
+  height: 2rem;
+}
+
+header .logo {
+  flex: 1;
+  padding-left: 1.5rem;
+  align-items: center;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+.darkgrey{
+  color: rgb(74,74,74);
+}
+
+.grey{
+  color: rgb(157,157,157);
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+  font-size: 1rem;
+  color: rgb(129,129,129);
+}
+
+
+header nav{
+  /*float: right;*/
+  margin-right: 1.5rem;
+}
+
+/* Banner Section */
+
+.banner{
+  width: 100%;
+  background-color: rgb(216,216,216);
+  /*display: flex;*/
+  height: 30rem;
+  padding-top: 6rem;
+}
+
+
+/*.banner img{
+  padding: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}*/
