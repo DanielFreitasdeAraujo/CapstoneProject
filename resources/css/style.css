@@ -9,7 +9,6 @@ header {
   position: fixed;
   width: 100%;
   background-color: white;
-  opacity: 0.5;
 }
 
 header .content {
@@ -59,16 +58,27 @@ header nav{
 /* Banner Section */
 
 .banner{
-  width: 100%;
   background-color: rgb(216,216,216);
   /*display: flex;*/
-  height: 30rem;
-  padding-top: 6rem;
+  /*height: 30rem;*/
+  padding-top: 4rem;
 }
 
 
-/*.banner img{
+.bannercontent{
+  display: flex;
   padding: 2rem 1.5rem;
+  width: 100%;
+  align-items: center;
+}
+
+.bannercontent img{
   width: 60%;
   height: auto;
-}*/
+  margin-right: 1.5rem;
+}
+
+
+.bannersentences h1{
+  font-size: 3rem;
+}
