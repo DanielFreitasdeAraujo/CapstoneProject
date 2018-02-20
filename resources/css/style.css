@@ -62,12 +62,14 @@ header nav{
   /*display: flex;*/
   /*height: 30rem;*/
   padding-top: 4rem;
+  width: 100%;
+  display: flex;
 }
 
 
 .bannercontent{
   display: flex;
-  padding: 2rem 1.5rem;
+  padding: 2rem 0 2rem 1.5rem;
   width: 100%;
   align-items: center;
 }
@@ -75,10 +77,113 @@ header nav{
 .bannercontent img{
   width: 60%;
   height: auto;
-  margin-right: 1.5rem;
+  margin-right: 2.5rem;
+  display: flex;
+}
+
+.bannersentences{
+  width: 30%;
+}
+
+.letter{
+  font-weight: bold;
+  color: rgb(74,74,74);
+  padding-bottom: 2rem;
+}
+
+.one{
+  font-size: 2.75rem;
+}
+
+.two{
+  font-size: 1.5rem;
+}
+
+.bannersentences .button{
+  background-color:  rgb(74,74,74);
+  color: white;
+  text-align: center;
+  }
+
+.button{
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/* 2nd Section */
+
+.secsection{
+  background-color: white;
+  width: 100%;
+
+  display: flex;
+}
+
+.seccontent{
+  padding: 1rem 0 2rem 1.5rem;
+  display: flex;
+}
+
+.picandtext{
+  /*flex-direction: column;*/
+  max-width: 60%;
+  padding-right: 1.5rem;
+  /*display: flex;*/
+  padding-top: 1rem;
+}
+
+.picandtext img{
+  width: 100%;
+}
+
+.picframe{
+  .width: 35%;
 }
 
 
-.bannersentences h1{
-  font-size: 3rem;
+
+
+.secframes{
+  /*display: flex;*/
+  max-width: 40%;
+  border-left: 1px rgb(216,216,216) solid;
+  flex-direction: column;
+  padding-left: 1rem;
+
+}
+
+.frame{
+  display: flex;
+  padding: 1rem 0 1rem;
+  width: 100%;
+  height: 33.333333333%;
+}
+
+.frame img{
+  width: 35%;
+  height: auto;
+
+}
+
+.sectext{
+  color: rgb(74,74,74);
+  padding: 2rem 0 2rem 0;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+.sectext h1{
+  font-size: 2.75rem;
+  font-weight: bold;
+  padding-bottom: 1.5rem;
+}
+
+.sectext p{
+  font-size: 1.5rem;
+}
+
+.signature{
+  font-weight: bold;
+  align-content: flex-end;
 }
