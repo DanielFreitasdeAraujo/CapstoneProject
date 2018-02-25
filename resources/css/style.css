@@ -55,6 +55,38 @@ header nav{
   margin-right: 1.5rem;
 }
 
+
+
+@media only screen and (max-width: 560px) {
+  .desktop {
+    display: none;
+  }
+
+  .logo i{
+    display: block;
+  }
+
+  .logo{
+    justify-content: space-between;
+    margin-right: 1.5rem;
+  }
+
+  .mobile{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+
+  .logo i{
+    display: none;
+  }
+  .mobile{
+    display: none;
+  }
+
+}
+
 /* Banner Section */
 
 .banner{
@@ -81,13 +113,58 @@ header nav{
   display: flex;
 }
 
-.bannersentences{
-  width: 30%;
+@media only screen and (max-width: 560px) {
+
+  .bannercontent img {
+    width: 100%;
+  }
+
+  .bannercontent{
+    display: block;
+    padding: 0 0 2rem 0;
+  }
+  .bannersentences{
+    /*width: 100%;*/
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 2rem;
+    /*display: flex;*/
+    /*text-align: center;*/
+    justify-content: center;
+
+  }
+
+  .bannersentences .button{
+    width: 95%;
+    /*padding: 0 0;*/
+  }
+
+  .bannersentences p{
+    width: 80%;
+  }
+
+  .bannersentences div{
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .bannersentences{
+    max-width: 30%;
+  }
+}
+
+
+.bannersentences .letter{
+
 }
 
 .letter{
   font-weight: bold;
   color: rgb(74,74,74);
+}
+
+.bannersentences .letter{
   padding-bottom: 2rem;
 }
 
@@ -96,7 +173,7 @@ header nav{
 }
 
 .two{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .bannersentences .button{
@@ -121,13 +198,14 @@ header nav{
 }
 
 .seccontent{
-  padding: 1rem 0 2rem 1.5rem;
+  padding: 1rem 0 2rem 1rem;
   display: flex;
+  width: 100%;
 }
 
 .picandtext{
   /*flex-direction: column;*/
-  max-width: 60%;
+  max-width: 56%;
   padding-right: 1.5rem;
   /*display: flex;*/
   padding-top: 1rem;
@@ -142,42 +220,109 @@ header nav{
 }
 
 
+@media only screen and (max-width: 560px) {
+  .picandtext{
+    display: none;
+  }
+
+  .secframes{
+    width: 100%;
+    border: 0px;
+  }
+
+  .frame{
+
+    /*padding: 1rem 0 1rem;*/
+    width: 100%;
+    /*height: 33.333333333%;*/
+    align-items: center;
+    /*padding-left: 1rem;*/
+    /*padding-left: 1rem;*/
+    padding-bottom: 1rem;
+
+  }
+
+  .frame img{
+    width: 95%;
+    height: 8rem;
+    background-size: cover;
+  }
+
+  .framesentences{
+    width: 100%;
+  }
+
+  .framesentences div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    max-width: 80%
+  }
+
+  .backgrey{
+    background-color: white;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .secframes{
+    /*display: flex;*/
+    max-width: 40%;
+    border-left: 1px rgb(216,216,216) solid;
+    flex-direction: column;
+  }
+  .frame img{
+    width: 35%;
+    height: auto;
+
+  }
+
+  .frame{
+    display: flex;
+    padding: 1rem 0 1rem;
+    width: 100%;
+    /*height: 33.333333333%;*/
+    align-items:flex-start;
+    padding-left: 1rem;
+  }
 
 
-.secframes{
-  /*display: flex;*/
-  max-width: 40%;
-  border-left: 1px rgb(216,216,216) solid;
-  flex-direction: column;
-  padding-left: 1rem;
+  .framesentences{
+    padding-left: 1.5rem;
+    display: flex;
+    height: 100%;
+    width: 65%;
+
+  }
+
+  .framesentences div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15%;
+  }
+
+  .backgrey{
+    background-color: rgb(216,216,216);
+  }
 
 }
 
-.frame{
-  display: flex;
-  padding: 1rem 0 1rem;
-  width: 100%;
-  /*height: 33.333333333%;*/
-  align-items:flex-start;
+
+
+
+.blue{
+  color: rgb(88,152,227);
 }
 
-.frame img{
-  width: 35%;
-  height: auto;
 
-}
 
-.framesentences{
-  padding-left: 1.5rem;
-  display: flex;
-  height: 100%;
-  width: 65%;
-}
 
-.framesentences div{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+
+.framesentences p{
+  margin-bottom: 0.5rem;
 }
 
 .sectext{
@@ -194,10 +339,186 @@ header nav{
 }
 
 .sectext p{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .signature{
   font-weight: bold;
   align-content: flex-end;
+  padding-top: 2rem;
+}
+
+/*   Learning Box */
+
+
+
+@media only screen and (min-width: 560px) {
+  .learningbox{
+  background-color: rgb(216,216,216);
+  padding: 2rem 4.5rem;
+  /*width: 100%;*/
+  display: flex;
+  }
+
+  .featurebox{
+    width: 25%;
+    background-color: white;
+    margin: 0rem 1rem 1rem 0;
+  }
+
+  .featuredescription{
+    height: 8rem;
+    background-color: white;
+    padding: 1rem 1rem 1.5rem 1rem;
+    text-align: left;
+      color: rgb(133,133,133);
+      line-height: 1.2;
+  }
+
+    .features{
+      margin-top: : 2rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+  .learningbox{
+  background-color: white;
+  padding-top: 1rem;
+  /*width: 100%;*/
+  display: flex;
+  }
+
+  .featurebox{
+    width: 95%;
+    background-color: rgb(216,216,216);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .featuredescription{
+    background-color: rgb(216,216,216);
+    padding: 1rem 1rem 1rem 1rem;
+    text-align: left;
+    color: rgb(133,133,133);
+    line-height: 1.2;
+  }
+
+  .features{
+    margin-top: 2rem;
+  }
+}
+
+.learningboxcontent{
+  text-align: center;
+  justify-content: center;
+  /*display: flex;*/
+  width: 100%;
+}
+
+.text{
+  text-align: center;
+  width: 100%;
+  line-height: 1.5;
+}
+
+.features{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+.featurebox img{
+  width: 100%;
+  height: auto;
+  margin: 0px;
+}
+
+
+.featuredescription .letter{
+
+}
+
+.courses{
+  padding: 0.5rem 0rem 0.5rem 0;
+}
+
+
+/*  Thesis Section */
+
+@media only screen and (max-width: 560px) {
+  .thesis{
+    width: 100%;
+    display: flex;
+  }
+
+  .thesis img{
+    width: 100%;
+    height: auto;
+    padding: 0rem 0rem;
+  }
+
+  .thesisbox{
+    padding: 0rem 0rem;
+  }
+}
+
+@media only screen and (min-width: 560px) {
+  .thesisbox{
+    padding: 2rem 0rem 2rem 1.5rem;
+  }
+}
+
+.thesisbox{
+  background-color: white;
+  /*display: flex;*/
+  justify-content: center;
+}
+
+
+.thesisboxcontent{
+  width: 100%
+}
+
+
+.videoandframes{
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.video{
+  margin-right: 1.5rem;
+  max-width: 2%;
+  display: flex;
+}
+
+.frames{
+  width: 40%;
+}
+
+
+
+/* footer */
+
+footer{
+  border-top: 1px rgb(216,216,216) solid;
+  /*width: 100%;*/
+  padding: 1rem 1.5rem 1rem 1.5rem;
+  color: rgb(133,133,133);
+  display: space-between;
+  height: 4rem;
+
+}
+
+.copyright{
+  float: left;
+}
+
+.terms{
+  float: right;
+
 }
